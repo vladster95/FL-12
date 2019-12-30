@@ -30,7 +30,7 @@ if (ins === null) {
                             alert('Canceled');
                             break;
                         } else if (ins3.length < p_length_max) {
-                            alert("It’s too short password. Sorry.");
+                            alert("Itâ€™s too short password. Sorry.");
                             continue;
                         } else if (ins3 === 'UserPass' && ins === emU || ins3 === 'AdminPass' && ins === emA) {
                             break;
@@ -43,16 +43,16 @@ if (ins === null) {
                                 alert('Canceled');
                                 break;
                             } else if (ins4.length < p_length_max) {
-                                alert("It’s too short password. Sorry.");
+                                alert("Itâ€™s too short password. Sorry.");
                                 continue;
-                            } else if (ins4 === ins3) {
+                            } else if (ins4 !== ins3) {
                                 do {
                                     ins5 = prompt('Please re-insert new password: ', '');
                                     if (ins5 === null) {
                                         alert('Canceled');
                                         break;
                                     } else if (ins5.length < p_length_max) {
-                                        alert("It’s too short password. Sorry.");
+                                        alert("Itâ€™s too short password. Sorry.");
                                         continue;
                                     } else if (ins5 === ins4) {
                                         alert('You have successfully changed your password.');
@@ -78,6 +78,6 @@ if (ins === null) {
             }
         } while (pass);
     } else {
-        alert('I don’t know you');
+        alert('I donâ€™t know you');
     }
 }
