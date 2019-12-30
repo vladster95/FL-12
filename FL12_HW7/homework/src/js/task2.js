@@ -34,6 +34,7 @@ if (isReady) {
                     total_prize += prize_pool[prize_on_attempt[attempts_cur-1]] * prize_multiplier;
                     rnd_max += rnd_pool_inc;
                     prize_multiplier *= prize_mn;
+                    attempts_cur = attempts_default;
                     continue;
                 } else {
                     break;
