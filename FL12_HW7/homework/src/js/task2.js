@@ -20,7 +20,6 @@ if (isReady) {
             theNumber = parseInt(prompt('Choose a roulette pocket number from 0 to ' + rnd_max + '\n' +
                 'Attempts left: ' + attempts_cur + '\n' +
                 'Total prize: ' + total_prize + '$\n' +
-                'the number is: ' + rnd_number + '\n' +
                 'Possible prize on current attempt: ' +
                 prize_pool[prize_on_attempt[attempts_cur - 1]] * prize_multiplier + '$\n', ''));
             if (isNaN(theNumber)) {
